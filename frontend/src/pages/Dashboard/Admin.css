@@ -1,0 +1,83 @@
+.admin-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 90vh; /* Reduced height to avoid excessive scrolling */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    position: relative; /* Added to position the logout button */
+  }
+  
+  .admin-page-title {
+    font-size: 2em;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .logout-button {
+    position: absolute;
+    top: 20px; /* Adjust top spacing as needed */
+    right: 20px; /* Adjust right spacing as needed */
+    background-color: #ff4c4c; /* Red button background color */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .logout-button:hover {
+    background-color: #e64545; /* Darker red background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .admin-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the options horizontally */
+    gap: 20px; /* Space between options */
+  }
+  
+  .admin-option-button {
+    background-color: #ff4c4c; /* Red button background color */
+    color: #ffffff; /* Button text color */
+    padding: 15px 30px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2em;
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  .admin-option-button:hover {
+    background-color: #e64545; /* Darker red background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .admin-page-container {
+      padding: 10px;
+      height: auto; /* Adjust height for smaller screens */
+    }
+  
+    .admin-page-title {
+      font-size: 1.5em;
+      margin-top: 40px; /* Add top margin to avoid overlap */
+    }
+  
+    .admin-option-button {
+      font-size: 1em;
+      padding: 10px 20px;
+    }
+  
+    .logout-button {
+      top: 10px; /* Adjust top spacing for smaller screens */
+      right: 10px; /* Adjust right spacing for smaller screens */
+      padding: 8px 16px;
+      font-size: 0.9em;
+    }
+  }
+  

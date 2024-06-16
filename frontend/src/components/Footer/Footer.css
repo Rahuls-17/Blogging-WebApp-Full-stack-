@@ -1,0 +1,103 @@
+.footer {
+  background-color: #000; /* Dark background color */
+  padding: 40px 0; /* Adjusted top and bottom padding */
+  font-family: 'Roboto Condensed', sans-serif; /* Specify font family */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between elements */
+  align-items: center; /* Align items to the center */
+  padding: 0 20px; /* Adjust horizontal padding */
+}
+
+.foot-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items horizontally */
+  text-align: center; /* Center align text */
+  flex: 1; /* Allow the logo section to grow */
+}
+
+.foot-logo img {
+  width: 150px;
+  display: block;
+}
+
+.foot-logo p {
+  color: white; /* Set text color to white */
+  font-weight: normal; /* Set font weight to normal */
+  font-size: 16px; /* Set slightly larger font size */
+}
+
+.foot-logo .slogan2 {
+  color: white;
+  font-size: 16px; /* Set slightly larger font size */
+}
+
+.join-waitlist {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif; /* Specify font family */
+  font-weight: normal; /* Set font weight to normal */
+  font-size: 14px; /* Set slightly larger font size */
+  margin-top: 10px; /* Adjust spacing above the button if necessary */
+}
+
+.foot-links {
+  display: flex;
+  justify-content: space-around; /* Center align links horizontally */
+  align-items: flex-start; /* Align links to the top */
+  gap: 30px; /* Adjust gap between link sections */
+  flex: 2; /* Allow the links section to grow */
+}
+
+.foot-links p {
+  color: white; /* Set text color to white */
+  font-weight: normal; /* Set font weight to normal */
+  font-size: 16px; /* Set slightly larger font size */
+}
+
+.foot-links a {
+  color: #b0b0b0; /* Set text color to a lighter grey */
+  text-decoration: none;
+  font-size: 14px; /* Set slightly larger font size */
+  font-family: 'Roboto Condensed', sans-serif; /* Specify font family */
+}
+
+.foot-links a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+.foot-links ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.foot-links li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .footer-nav {
+    flex-direction: column;
+    align-items: center; /* Center align items vertically in column layout */
+  }
+
+  .foot-links {
+    display: flex;
+    flex-direction: column; /* Display links in a column for smaller screens */
+    align-items: center; /* Center align links horizontally */
+    gap: 20px; /* Maintain gap between link sections for mobile */
+  }
+
+  .foot-links p {
+    text-align: center; /* Center align text for smaller screens */
+  }
+}

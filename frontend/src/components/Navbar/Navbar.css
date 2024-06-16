@@ -1,0 +1,101 @@
+/* Common styles for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+
+.nav-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-logo img {
+  width: 150px;
+}
+
+.nav-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  transition: color 0.3s, text-decoration-color 0.3s;
+}
+
+.nav-links a:hover {
+  color: red;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.nav-join {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-join button {
+  padding: 13px 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3em;
+  border-radius: 20px;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav-links by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    background-color: white; /* Background color for the dropdown */
+    text-align: center;
+    border-top: 1px solid black; /* Border to separate from the navbar */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav-links when active */
+  }
+
+  .nav-join {
+    display: none; /* Hide nav-join on smaller screens */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu */
+  }
+}

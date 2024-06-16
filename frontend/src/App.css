@@ -1,0 +1,91 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px; /* Increased top and bottom padding */
+    border-bottom: 1px solid black;
+  }
+  
+  .nav-logo {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .nav-logo img {
+    width: 150px;
+  }
+  
+  .nav-links {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+  }
+  
+  .nav-join {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .nav-join button {
+    padding: 11px 20px; /* Adjust padding to match the size of the logo */
+    background-color: red; /* Red background color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2em; /* Larger font size for visibility */
+    border-radius: 20px; /* Rounded corners */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+      border-bottom: none;
+    }
+  
+    .nav-logo,
+    .nav-join {
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+    }
+  
+    .nav-links a {
+      display: block;
+      margin: 10px 0;
+      text-align: center;
+    }
+  
+    .nav-join button {
+      width: 100%;
+    }
+  }
+  /* NavBar.css */
+  .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    transition: color 0.4s, text-decoration-color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .nav-links a:hover {
+    color: red; /* Text color changes to red on hover */
+    text-decoration: underline; /* Underline text on hover */
+    text-decoration-color: black; /* Underline color is black */
+  }

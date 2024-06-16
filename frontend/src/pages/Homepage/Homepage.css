@@ -1,0 +1,39 @@
+/* Fixed navbar styling */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff; /* Ensure the navbar has a background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure content doesn't hide under the fixed navbar */
+  .homepage-content {
+    padding-top: 40px; /* Reduced padding-top to decrease the space */
+  }
+  
+  /* Main container styling */
+  .content-container {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  /* Page title styling */
+  .page-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Blog cards container styling */
+  .blog-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px; /* Vertical gap between cards */
+    column-gap: 30px; /* Horizontal gap between cards */
+    justify-content: flex-start; /* Align cards to the start of the container */
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
